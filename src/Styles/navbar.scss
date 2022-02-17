@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+.nav {
+  background: $clr-primary-4;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+
+  &-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: $max-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  &-links a {
+    color: $clr-mainWhite;
+    transition: $transition;
+  }
+  & a:hover {
+    color: $clr-bg;
+  }
+}
