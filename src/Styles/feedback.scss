@@ -1,0 +1,50 @@
+@import './variables.scss';
+.feedback {
+  position: relative;
+  background: $clr-mainWhite;
+  padding: 3rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+
+  &-rate {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: $clr-primary-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $clr-mainWhite;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+  }
+  &-feed {
+    word-wrap: break-word;
+    line-height: 1.5;
+  }
+
+  .btn-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  .feed-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .feed-btn:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .edit {
+    color: green;
+  }
+  .delete {
+    color: red;
+  }
+}

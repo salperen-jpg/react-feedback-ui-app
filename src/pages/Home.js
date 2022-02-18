@@ -1,10 +1,12 @@
 import React from 'react';
-import { Form } from '../components/';
+import { Form, Info, Feedbacks } from '../components/';
 
 const Home = () => {
   return (
     <article className='home'>
       <Form />
+      <Info />
+      <Feedbacks></Feedbacks>
     </article>
   );
 };

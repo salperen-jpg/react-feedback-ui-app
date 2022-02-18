@@ -1,0 +1,26 @@
+@import '../Styles/variables.scss';
+.error {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+  &-center {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  h1 {
+    color: $clr-primary-4;
+  }
+  h3 {
+    color: red;
+  }
+  &-btn {
+    color: $clr-mainWhite;
+    background: $clr-primary-2;
+    padding: 0.375rem 0.775rem;
+    border-radius: 10px;
+  }
+}

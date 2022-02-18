@@ -2,7 +2,18 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { About, Error, Home } from './pages';
 import Navbar from './components/Navbar';
+import { useFeedbackContext } from './context';
+import Loading from './components/UI/Loading';
 function App() {
+  const { isLoading } = useFeedbackContext();
+
+  if (isLoading) {
+    return (
+      <>
+        <Loading />
+      </>
+    );
+  }
   return (
     <BrowserRouter>
       <Navbar />

@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 import '../Styles/form.scss';
 
 const Form = () => {
-  const { feedback, handleChange, handleSubmit } = useFeedbackContext();
+  const { feedback, handleChange, handleSubmit, abc } = useFeedbackContext();
   return (
     <section className='form-section'>
       <div className='form-center'>
@@ -22,7 +22,7 @@ const Form = () => {
               onChange={handleChange}
             />
             <button
-              type='button'
+              type='submit'
               className='btn btn-action'
               onClick={handleSubmit}
             >

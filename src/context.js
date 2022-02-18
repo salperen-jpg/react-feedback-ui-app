@@ -16,16 +16,31 @@ export const AppProvider = ({ children }) => {
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
+
     dispatch({ type: 'HANDLE_CHANGE', payload: { name, value } });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch({ type: 'HANDLE_SUBMIT' });
-    if (state.feedback.text) {
+    if (state.feedback.feed) {
+      dispatch({ type: 'HANDLE_SUBMIT' });
     }
   };
+  const closeLoading = () => {
+    dispatch({ type: 'CLOSE_LOADING' });
+  };
+  const deleteFeedback = (id) => {
+    dispatch({ type: 'DELETE_FEEDBACK', payload: id });
+  };
   return (
-    <FeedbackContext.Provider value={{ ...state, handleChange, handleSubmit }}>
+    <FeedbackContext.Provider
+      value={{
+        ...state,
+        handleChange,
+        handleSubmit,
+        closeLoading,
+        deleteFeedback,
+      }}
+    >
       {children}
     </FeedbackContext.Provider>
   );

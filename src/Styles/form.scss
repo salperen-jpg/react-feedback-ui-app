@@ -2,6 +2,7 @@
 @import './variables.scss';
 .form-section {
   margin: 2rem auto;
+  margin-top: 4rem;
 
   .form-center {
     @include section-center;
@@ -25,9 +26,11 @@
 }
 .text-part {
   display: flex;
+  justify-content: center;
 }
 .form-input {
   flex: 9;
+  max-width: 35rem;
   height: 3rem;
   appearance: none;
   border-radius: 10px;
@@ -36,9 +39,10 @@
   background: $clr-primary-5;
   color: $clr-mainWhite;
   padding: 1rem;
+  font-size: 1.3rem;
 }
 .btn-action {
-  flex: 1;
+  margin-left: 2rem;
   height: 3rem;
   background-color: transparent;
   border: none;

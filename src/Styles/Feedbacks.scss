@@ -1,0 +1,18 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.feedbacks {
+  margin-top: 2rem;
+  &-center {
+    @include section-center;
+    max-width: 1000px;
+  }
+}
+
+.centered-info {
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  text-align: center;
+  color: $clr-primary-5;
+  letter-spacing: $spacing;
+}
