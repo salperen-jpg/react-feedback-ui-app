@@ -4,7 +4,12 @@ import Feedback from './Feedback';
 import '../Styles/Feedbacks.scss';
 
 const Feedbacks = () => {
-  const { feedbacks } = useFeedbackContext();
+  const { feedbacks, setLocal } = useFeedbackContext();
+
+  React.useEffect(() => {
+    setLocal();
+  }, [feedbacks]);
+
   if (feedbacks.length === 0) {
     return (
       <div className='centered-info'>

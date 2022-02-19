@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.alert {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  border-radius: 10px;
+  transform: translate(-100%);
+  transition: all 0.5s linear;
+}
+.show {
+  transform: translate(0);
+}
+.danger {
+  background: red;
+  color: white;
+}
+.success {
+  background: green;
+  color: white;
+}
+.error-message {
+  padding-bottom: 1rem;
+  color: firebrick;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+export const HANDLE_CHANGE = 'HANDLE_CHANGE';
+export const HANDLE_SUBMIT = 'HANDLE_SUBMIT';
+export const CLOSE_LOADING = 'CLOSE_LOADING';
+export const CLOSE_ALERT = 'CLOSE_ALERT';
+export const TOGGLE_ERROR = 'TOOGLE_ERROR';
+export const CLOSE_ERROR = 'CLOSE_ERROR';
+export const DELETE_FEEDBACK = 'DELETE_FEEDBACK';
+export const SET_RATE = 'SET_RATE';
+export const START_EDIT = 'START_EDIT';
+export const FINISH_EDIT = 'FINISH_EDIT';
